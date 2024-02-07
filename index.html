@@ -75,10 +75,10 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Registrate</a>
+                                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#registrateID" href="#">Registrate</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Inicia sesion</a>
+                                    <a class="nav-link " data-bs-toggle="modal" data-bs-target="#iniciaSesionID" href="#">Inicia sesion</a>
                                 </li>
                             </ul>
                             
@@ -234,8 +234,8 @@
                     </div>
                     <div class="col-8 col-md-3 text-center pt-3 pt-md-0">
                         <div><a class="text-light" href="quienes.html" style="text-decoration: none;">Quienes somos</a></div>
-                        <div><a class="text-light" href="" style="text-decoration: none;">Privacidad</a></div>
-                        <div><a class="text-light" href="" style="text-decoration: none;">Contacto</a></div>
+                        <div><a class="text-light" data-bs-toggle="modal" data-bs-target="#privacidadID" href="" style="text-decoration: none;">Privacidad</a></div>
+                        <div><a class="text-light" data-bs-toggle="modal" data-bs-target="#contactoID" href="" style="text-decoration: none;">Contacto</a></div>
                     </div>
                     <div class="col-8 col-md-3 text-center mt-3">
                         <a class="btn btn-sm text-light " href="index.html" role="button" style="background-color: #28A743;">HOME</a>
@@ -258,4 +258,248 @@
             crossorigin="anonymous"
         ></script>
     </body>
+
 </html>
+
+
+
+
+<!-- Modal privacidad -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="privacidadID" tabindex="-1" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Privacidad
+                </h5>
+            </div>
+            <div class="modal-body ">
+
+                <h2 class="text-center">Términos y Condiciones de uso</h2>
+                <h3>1. Datos generales</h3>
+                <div class="container">
+                    <p class="fw-bolder  ps-4 ">De acuerdo con el artículo 10 de la Ley 34/2002, de 11 de julio, de
+                        Servicios de la Sociedad de la
+                        Información y de Comercio Electrónico ponemos a su disposición los siguientes datos:</p>
+
+                    <p class=" ps-4 ">catalogodeanimales.es está domiciliada en Ia calle Ronda S/N, con CIF B556677.
+                        Inscrita en el Registro
+                        Mercantil de Talavera de la Reina, Vol. xxxx, Folio xxxx, Hoja xxxx, Inscripción xxx. </p>
+
+                    <p class=" ps-4 ">En la web catalogodeanimales.es hay una serie de contenidos de carácter
+                        informativo sobre animales,
+                        especies, y características. <strong>Su principal objetivo </strong>es facilitar a los
+                        clientes y al público en
+                        general, la información relativa a la empresa, a los productos y servicios que se ofrecen.
+                    </p>
+                </div>
+                <h3>2. Datos generales</h3>
+                <div class="container">
+                    <p class="ps-4 ">En cumplimiento de 10 dispuesto en la <strong>Ley Orgánica 15/1999, de 13 de
+                            Diciembre, de Protección
+                            de Datos de Carácter Personal (LOPD)</strong> se informa al usuario que todos los datos que
+                        nos
+                        proporcione serán incorporados a un fichero, creado y mantenido bajo la responsabilidad de
+                        catalogodeanimales.es.</p>
+
+                    <p class=" ps-4 ">Siempre <strong> se va a respetar la confidencialidad de sus datos
+                            personales</strong> que sólo serán utilizados con
+                        Ia finalidad de gestionar los servicios ofrecidos, atender a las solicitudes que nos plantee,
+                        realizar
+                        tareas administrativas, así como remitir información técnica, comercial o publicitaria por vía
+                        ordinaria o
+                        electrónica.
+                    </p>
+
+                    <p class="ps-4 ">
+                        Para ejercer sus derechos de oposición, rectificación o cancelación deberá dirigirse a la sede
+                        de la
+                        empresa C/Ronda S/N de Talavera de la Reina, escribirnos al siguiente correo
+                        contacto@catalogodeanimales.es o llámanos al 777888999.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success ps-5 pe-5" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Modal contacto -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="contactoID" tabindex="-1" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ">
+
+            <div class=" modal-body">
+                <div class="row text-center mb-3">
+                    <h2 class="modal-title border-0  " id="modalTitleId">
+                        Escribe un comentario para contactar
+                    </h2>
+                </div>
+
+                <div class="container border rounded-3">
+                    <form>
+
+                        <div class=" row justify-content-center align-items-center">
+                            <div class="form-group mt-3">
+                                <label for="exampleInputEmail1">Nombre</label>
+                                <input type="text" class="form-control" id="exampleName" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="form-group mt-4">
+                                <label for="exampleInputEmail1">Tu Email</label>
+                                <input type="text" class="form-control" id="exampleEmail" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="form-group pt-3 ">
+                                <label for="exampleFormControlTextarea1">Tu comentario</label>
+                                <textarea class="form-control  form-control-lg" id="exampleFormControlTextarea1"
+                                    rows="5"></textarea>
+                            </div>
+
+
+                            <div class="form-group row  my-3">
+                                <button type="submit" class="btn text-light " style="background-color: #28A743;">
+                                    Enviar
+                                </button>
+
+
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Modal registrateID -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="registrateID" tabindex="-1" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content ">
+
+            <div class=" modal-body ">
+                <div class="row text-center mb-3 border border-0 ">
+                    <h2 class="modal-title " id="modalTitleId">
+                        Registro de usuario
+                    </h2>
+                </div>
+
+                <div class="container border rounded-3">
+                    <form>
+
+                        <div class=" row justify-content-center align-items-center">
+                            <div class="form-group mt-3">
+                                <label for="exampleInputEmail1">Usuario</label>
+                                <input type="text" class="form-control" id="exampleName" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="exampleInputPassword1" class="form-label">Repite la contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword2">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="exampleInputDireccion" class="form-label">Direccion</label>
+                                <input type="text" class="form-control" id="exampleInputDireccion">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="exampleInputDireccion" class="form-label">Teléfono</label>
+                                <input type="number" class="form-control" id="exampleInputDireccion">
+                            </div>
+
+                            <div class="form-group row  my-3">
+                                <button type="submit" class="btn text-light " style="background-color: #28A743;">
+                                    Enviar
+                                </button>
+
+
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- Modal iniciarSesison -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="iniciaSesionID" tabindex="-1" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content ">
+
+            <div class=" modal-body">
+                <div class="row text-center mb-3">
+                    <h2 class="modal-title border-0  " id="modalTitleId">
+                        <strong>INICIA SESIÓN</strong>
+                    </h2>
+                </div>
+
+                <div class="container border rounded-3">
+                    <form>
+
+                        <div class=" row justify-content-center align-items-center">
+                            <div class="form-group mt-3">
+                                <label for="exampleInputEmail1">Nombre</label>
+                                <input type="text" class="form-control" id="exampleName" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+
+
+
+                            <div class="form-group row  my-3">
+                                <button type="submit" class="btn text-light " style="background-color: #28A743;">
+                                    Enviar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
